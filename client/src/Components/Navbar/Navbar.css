@@ -1,0 +1,158 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbar-menu li{
+    cursor: pointer;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-height: 12px;
+    min-width: 12px;
+    border-radius: 50%;
+    background-color: tomato;
+    top: -6px;
+    right: -6px;
+}
+
+.navbar-right button {
+    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    background: tomato;
+    font-weight: 600;
+    border: 2px solid tomato;
+    cursor: pointer;
+    transition: ease-in-out 150ms;
+    text-decoration: none;
+}
+
+.navbar-right button:hover{
+    color: tomato;
+    background: transparent;
+}
+
+.navbar-right button:active{
+    color: white;
+    background: tomato;
+}
+
+.navbar-profile{
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff2ef;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 3px;
+    border: 1px solid tomato;
+    outline: 1px solid white;
+    list-style: none;
+}
+
+.profile-dropdown li {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.profile-dropdown li:hover {
+    color: tomato;
+}
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .navbar-right{
+        gap: 20px;
+    }
+
+    .navbar-right img{
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right{
+        gap: 15px;
+    }
+
+    .navbar-right img{
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+}

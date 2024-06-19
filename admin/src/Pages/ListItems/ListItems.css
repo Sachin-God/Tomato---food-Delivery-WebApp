@@ -1,0 +1,42 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    padding: 12px 15px;
+}
+
+.title{
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+.list-table-format img {
+    width: 54px;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+@media (max-width : 700px) {
+    .list-table-format {
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+}
+
+@media (max-width : 410px) {
+    .list-table-format {
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 13px;
+    }
+}

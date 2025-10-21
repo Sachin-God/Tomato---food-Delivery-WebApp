@@ -1,7 +1,7 @@
 import User from "../database/Models/User.js";
 import dotenv from "dotenv";
 import errorHandler from "../utils/errorHandler.js";
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 dotenv.config()
 
